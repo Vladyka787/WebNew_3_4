@@ -1,0 +1,254 @@
+/************************
+BODY
+*************************/
+html {
+    height: 100%;
+}
+
+.body {
+    height: 100%;
+    display: block;
+    margin: 0;
+    background-color: #e3d6c8;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #76420c;
+    color: #e3d6c8;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: sticky;
+    top: 0px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    font-size: xx-large;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.header__buttons {
+    font-size: 20px;
+    align-self: center;
+}
+
+.otstup {
+    padding-left: 25px;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+.body__container {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.body__photo {
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    color: #76420c;
+    background-color: #d9b597;
+    margin: 35px 15px 0px 15px;
+}
+
+.body__photo__img {
+    border-radius: 20px 20px 0px 0px;
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.body__photo__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0px 10px;
+}
+
+.container_add {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 25px 0px;
+}
+
+.container_add__button {
+    padding: 6px 4px;
+    border-radius: 5px;
+    background-color: #d9b597;
+    color: #76420c;
+}
+
+.footer {
+    width: 100%;
+    bottom: 0px;
+    position: relative;
+    display: contents;
+}
+
+.footer_container {
+    background-color: #76420c;
+    color: #e3d6c8;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+/************************
+POPUP
+************************/
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup__area {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.popup__content {
+    border-radius: 10px;
+    max-width: 600px;
+    background-color: #d9b597;
+    padding: 30px;
+    position: relative;
+}
+
+.popup__close {
+    color: #76420c;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+fieldset {
+    border-color: #76420c;
+}
+
+legend {
+    color: #76420c;
+}
+
+.popup__pole {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    padding-right: 10px;
+}
+
+.popup__otpravka {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: #d9b597;
+    color: #76420c;
+}
+
+.popup__lowlink {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    margin: 5px 0 0 0;
+    color: yellow;
+    font-size: 12px;
+    display: flex;
+    justify-content: end;
+}
+
+/************************
+detail_page
+************************/
+.detail_page {
+    justify-content: unset;
+    flex-wrap: unset;
+    color: #76420c;
+}
+
+.body__container__left {
+    width: 65%;
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+.body__container__right {
+    width: 35%;
+    padding-right: 25px;
+}
+
+.detail_page_img {
+    width: auto;
+    height: 400px;
+    object-fit: cover;
+    border-width: 20px;
+    border-style: ridge;
+    border-color: floralwhite;
+}
+
+.body__container__right__select {
+    font-size: 18px;
+    background-color: #e3d6c8;
+    color: #76420c;
+}
+
+.body__container__right__button {
+    font-size: 18px;
+    background-color: #e3d6c8;
+    color: #76420c;
+}
