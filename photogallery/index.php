@@ -29,7 +29,7 @@ $connection = new PDO('pgsql:host=localhost;dbname=photogallery', 'postgres', 'p
 <body class="body">
 
     <div class="wrapper">
-        
+
         <header class="header">
             <? if (!array_key_exists("user_id", $_SESSION)) { ?>
                 <div class="header__container">
@@ -67,7 +67,7 @@ $connection = new PDO('pgsql:host=localhost;dbname=photogallery', 'postgres', 'p
         </header>
 
         <div class="body__container" id="vstavka_post">
-                <?require_once("main.php");?>
+            <? require_once("main.php"); ?>
         </div>
 
         <div class="container_add">
@@ -85,9 +85,14 @@ $connection = new PDO('pgsql:host=localhost;dbname=photogallery', 'postgres', 'p
         </footer>
     </div>
 
-    <?require_once("vhod_popup.php");?>
+    <? require_once("vhod_popup.php"); ?>
 
-    <?require_once("reg_popup.php");?>
+    <? require_once("reg_popup.php"); ?>
+
+
+    <? if (array_key_exists("user_id", $_SESSION)) {
+        require_once("link_add.php");
+    } ?>
 
 </body>
 
